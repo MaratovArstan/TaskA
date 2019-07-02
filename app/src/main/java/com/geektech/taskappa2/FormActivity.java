@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 
 public class FormActivity extends AppCompatActivity {
-    private static final String RESULT_KEY = "key";
+    public static final String RESULT_KEY = "key" ;
     EditText editTitle;
     EditText editDescription;
 
