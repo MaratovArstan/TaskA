@@ -29,11 +29,20 @@
             android:layout_weight="1"
             android:text="Отмена"/>
         <Button
+            android:id="@+id/but1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClickSave"
             android:layout_weight="1"
             android:text="Сохранить"/>
+
+        <Button
+            android:id="@+id/changeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@+id/but1"
+            android:text="Шрифт"
+            />
     </LinearLayout>
 
 </LinearLayout>

@@ -15,6 +15,7 @@ public class OnBoardActivity extends AppCompatActivity {
     SectionPagerAdapter adapter;
     ViewPager viewPager;
     Button button;
+    Button button1;
     TabLayout tabLayout;
 
     @Override
@@ -25,16 +26,12 @@ public class OnBoardActivity extends AppCompatActivity {
         viewPager =findViewById(R.id.view_pager);
         adapter = new SectionPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapter);
-        button=findViewById(R.id.button2);
+        button1=findViewById(R.id.button2);
         tabLayout = findViewById(R.id.table_layout);
         tabLayout.setupWithViewPager(viewPager,true);
 
     }
 
-    public void onCancel() {
-        Intent intent = new Intent(OnBoardActivity.this,MainActivity.class);
-        startActivity(intent);
-    }
 
     public class  SectionPagerAdapter  extends FragmentPagerAdapter{
 
